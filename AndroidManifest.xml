@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:compileSdkVersion="32"
+    android:compileSdkVersionCodename="12"
+    package="com.example.mealer"
+    platformBuildVersionCode="32"
+    platformBuildVersionName="12">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="32" />
+
+    <application
+        android:theme="@ref/0x7f0f025d"
+        android:label="@ref/0x7f0e001c"
+        android:icon="@ref/0x7f0c0000"
+        android:debuggable="true"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:roundIcon="@ref/0x7f0c0001"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+
+        <activity
+            android:name="com.example.mealer.AdminHome"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.mealer.CookOrdersActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.mealer.ComplainActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.mealer.RateActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.mealer.MealPurchasedActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.mealer.MealRequestsActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.mealer.ViewCookActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.mealer.OrderActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.mealer.CookProfile"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.mealer.CookMeals"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.mealer.CookHome"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.mealer.ClientHome"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.mealer.RegisterCook"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.mealer.RegisterClient"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.mealer.MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.example.mealer.androidx-startup">
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+    </application>
+</manifest>
